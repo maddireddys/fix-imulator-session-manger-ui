@@ -1,0 +1,41 @@
+
+
+.side_menu{
+	float:left;
+	width: 8%;
+}
+.side_menu a {
+ text-decoration: none;
+}
+
+.side_menu ul {
+ list-style-type: none;
+ padding-inline-start: 20px !important;
+}
+
+.right_body {
+	float:left;
+	width: 92%
+}
+.small{
+	font-family:Verdana,Arial,Helvetica,sans-serif;font-size:10px;
+}
+.mat-form-field-placeholder{
+  color:black;
+}
+
+.mat-focused .mat-form-field-placeholder{
+  color:black;
+}
+
+::ng-deep .mat-form-field-underline .mat-form-field-ripple{
+   background-color:black;
+}
+
+::ng-deep .mat-form-field-underline{
+   background-color:black !important;
+}
+::ng-deep .mat-select-content{
+    background: white !important;
+    color: black !important;
+}

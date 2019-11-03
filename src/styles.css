@@ -1,0 +1,119 @@
+/* You can add global styles to this file, and also import other style files */
+
+/*@import "~@angular/material/prebuilt-themes/pink-bluegrey.css";*/
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/*.mat-form-field-empty.mat-form-field-label  {
+  color: black !important;
+}
+.mat-select-panel {
+    background: white !important;
+}
+.mat-option {
+    color: black !important;
+    background-color: white !important;
+}
+.mat-select {
+    color: black !important;
+    background-color: white !important;
+}
+.mat-select-value {
+    color: black !important;
+}
+.mat-paginator-container.mat-select {
+    color: white !important;
+    background-color: black !important;
+}
+.mat-paginator-container.mat-select-value {
+    color: white !important;
+}
+.mat-paginator-container.mat-select-panel {
+    background: black !important;
+}
+.mat-paginator-container.mat-option {
+    color: white !important;
+    background-color: black !important;
+}
+.mat-menu-content:not(:empty) {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+.mat-menu-panel {
+    min-width: 60px !important;
+    background: white !important;
+}
+.mat-menu-item .mat-icon {
+    margin-right: 0px !important;
+    vertical-align: text-bottom !important;
+    color: black !important;
+}
+.mat-datepicker-content .mat-calendar-next-button, .mat-datepicker-content .mat-calendar-previous-button, .mat-datepicker-toggle {
+    color: #090b0c !important;
+}
+.mat-select-placeholder {
+    color: black;
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+
+.mat-table {
+    background: #fff;
+}
+
+.mat-input-element {
+    font: inherit;
+    background: 0 0;
+    color: black;
+    border: none;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    vertical-align: bottom;
+    text-align: inherit;
+}
+
+.mat-card {
+    color: #424242;
+    background: #fff;
+}
+
+.mat-header-cell {
+    color: rgba(0,0,0,.54);
+    font-size: 12px;
+    font-weight: 500;
+}
+.mat-cell {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 14px;
+  font-weight: 400;
+}
+.search-form{
+
+}
+*/
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.col:last-child {
+  margin-right: 0;
+}
+.full-width {
+  width: 100%;
+}

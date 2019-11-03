@@ -1,0 +1,21 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to Fix Session Manager!
+  </h1>
+  
+</div>
+<div>
+	<div class="side_menu">
+		<ul>
+			
+			<li>
+				<a [routerLink]="['/list-session']" [queryParams]="{debug: true}" fragment="session">
+				  Fix Sessions
+				</a>
+			</li>
+			
+		</ul>
+	</div>
+	<div class="right_body"><router-outlet></router-outlet></div>
+</div>

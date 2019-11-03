@@ -1,0 +1,8 @@
+table {
+  width: 100%;
+}
+
+table.mat-table {
+    border-spacing: 0 8px !important;
+}
+

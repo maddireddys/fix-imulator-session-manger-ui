@@ -1,0 +1,57 @@
+<div class="col-md-6 customer-container" style="padding-right: 20px">
+
+<div>
+  <h3 style="margin: auto">Session Details</h3>
+  <div align="right"><button mat-raised-button (click)="changesStatus()"> Add Session</button></div>
+</div>
+<div class="mat-elevation-z8">
+  <table mat-table [dataSource]="dataSource">
+
+    <ng-container matColumnDef="beginString">
+      <th mat-header-cell *matHeaderCellDef>Begin String</th>
+      <td mat-cell *matCellDef="let element"> {{element.beginString}}
+    </ng-container> 
+    <ng-container matColumnDef="senderCompId">
+      <th mat-header-cell *matHeaderCellDef> Sender CompId </th>
+      <td mat-cell *matCellDef="let element"> {{element.senderCompId}} </td>
+    </ng-container>
+    <ng-container matColumnDef="socketConnectHost">
+      <th mat-header-cell *matHeaderCellDef> Connect Host </th>
+      <td mat-cell *matCellDef="let element"> {{element.socketConnectHost}} </td>
+    </ng-container>
+    <ng-container matColumnDef="socketConnectPort">
+      <th mat-header-cell *matHeaderCellDef> Connect Port </th>
+      <td mat-cell *matCellDef="let element"> {{element.socketConnectPort}} </td>
+    </ng-container>
+    <ng-container matColumnDef="targetCompId">
+      <th mat-header-cell *matHeaderCellDef> Target CompId </th>
+      <td mat-cell *matCellDef="let element"> {{element.targetCompId}} </td>
+    </ng-container>
+    <ng-container matColumnDef="startTime">
+      <th mat-header-cell *matHeaderCellDef> Start Time </th>
+      <td mat-cell *matCellDef="let element"> {{element.startTime}} </td>
+    </ng-container>
+    <ng-container matColumnDef="endTime">
+      <th mat-header-cell *matHeaderCellDef> End Time </th>
+      <td mat-cell *matCellDef="let element"> {{element.endTime}} </td>
+    </ng-container>
+    <ng-container matColumnDef="heartBtInt">
+      <th mat-header-cell *matHeaderCellDef> Heart Beat Int </th>
+      <td mat-cell *matCellDef="let element"> {{element.heartBtInt}} </td>
+    </ng-container>
+    <ng-container matColumnDef="status">
+      <th mat-header-cell *matHeaderCellDef> Status </th>
+      <td mat-cell *matCellDef="let element"> {{element.status}} </td>
+    </ng-container>
+    <ng-container matColumnDef="action">
+      <th mat-header-cell *matHeaderCellDef> </th>
+      <td mat-cell *matCellDef="let element">
+      <button mat-icon-button [disabled]="!element.showStart" (click)="startSession(element)">Start</button>
+      <button mat-icon-button [disabled]="!element.showStop" (click)="stopSession(element)">Stop</button>
+      </td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</div>  
+</div>
